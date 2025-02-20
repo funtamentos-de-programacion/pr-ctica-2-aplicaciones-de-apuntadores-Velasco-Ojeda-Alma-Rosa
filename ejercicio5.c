@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 
-void pasarValor(int);
+void pasarValor(int); // prototipos me dice que retorna y el tipo de dato que recibe, pero no dice que hace
 void pasarReferencia(int *);
 
 
@@ -25,7 +25,7 @@ void pasarValor(int equis){
   printf("%d\n", equis);
 }
 
-void pasarReferencia(int *equis){
+void pasarReferencia(int *equis){ //Todo lo que pasemos por un apuntador-> referencia
   printf("%d\n", *equis);
   *equis = 128;
   printf("%d\n", *equis);
